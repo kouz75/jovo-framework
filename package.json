@@ -20,7 +20,7 @@
   "scripts": {
     "eslint": "eslint index.js lib/ test/",
     "eslint-fix": "eslint --fix index.js lib/ test/",
-    "test": "mocha test --recursive",
+    "test": "AWS_REGION=eu-west-1 mocha test --recursive",
     "test-unit": "NODE_ENV=test mocha '/**/*.spec.js'"
   },
   "repository": {
